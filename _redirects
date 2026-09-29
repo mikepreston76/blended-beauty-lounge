@@ -1,0 +1,7 @@
+# Cloudflare Pages and Netlify redirects
+/contactus            /contactus/            301
+/about                /about/                301
+/booking              /booking/              301
+/booking/lashextensions   /booking/          301
+/booking/japaneseheadspa  /booking/          301
+/booking/facials          /booking/          301

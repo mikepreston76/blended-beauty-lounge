@@ -1,0 +1,3 @@
+# Apache shared hosting (cPanel) redirects
+RewriteEngine On
+RewriteRule ^booking/(lashextensions|japaneseheadspa|facials)/?$ /booking/ [R=301,L]
