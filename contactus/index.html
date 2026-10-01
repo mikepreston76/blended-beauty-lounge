@@ -32,6 +32,20 @@
       </nav>
     </div>
   </header>
+  <button class="a11y-toggle" id="a11y-toggle" type="button" aria-expanded="false" aria-controls="a11y-panel" aria-label="Open accessibility options">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2a2 2 0 0 1 2 2v.9a6.5 6.5 0 0 1 4.1 2.8l.7-.7a1.5 1.5 0 1 1 2.1 2.1l-.7.7A6.5 6.5 0 0 1 19.1 14H20a2 2 0 1 1 0 4h-.9a6.5 6.5 0 0 1-2.8 4.1l.7.7a1.5 1.5 0 0 1-2.1 2.1l-.7-.7A6.5 6.5 0 0 1 12 19.1V20a2 2 0 1 1-4 0v-.9A6.5 6.5 0 0 1 5.2 16.9l-.7.7A1.5 1.5 0 1 1 2.4 15.5l.7-.7A6.5 6.5 0 0 1 4.9 12H4a2 2 0 1 1 0-4h.9A6.5 6.5 0 0 1 7.7 5.2l-.7-.7A1.5 1.5 0 1 1 9.1 2.4l.7.7A6.5 6.5 0 0 1 12 4.9V4a2 2 0 0 1 2-2Zm0 7.5A2.5 2.5 0 1 0 12 14.5a2.5 2.5 0 0 0 0-5Z"/></svg>
+    <span>Access</span>
+  </button>
+  <aside class="a11y-panel" id="a11y-panel" role="dialog" aria-modal="false" aria-labelledby="a11y-panel-title" hidden>
+    <h2 id="a11y-panel-title">Accessibility options</h2>
+    <div class="a11y-panel__actions">
+      <button type="button" class="a11y-option" data-action="text" aria-pressed="false">Increase text size</button>
+      <button type="button" class="a11y-option" data-action="contrast" aria-pressed="false">Increase contrast</button>
+      <button type="button" class="a11y-option" data-action="links" aria-pressed="false">Highlight links</button>
+      <button type="button" class="a11y-option" data-action="motion" aria-pressed="false">Reduce motion</button>
+      <button type="button" class="a11y-panel-close" data-action="reset">Reset settings</button>
+    </div>
+  </aside>
   <main id="main">
     <section class="page-head"><div class="wrap"><h1>Contact</h1></div></section>
     <section class="section">
@@ -73,8 +87,9 @@
           </ul>
         </div>
       </div>
-      <p class="legal">&copy; 2026 Blended Beauty Lounge, LLC. Website by <a href="http://peak4results.com">Peak Marketing &amp; Branding</a>.</p>
+      <p class="legal"><a href="../accessibility/index.html">Accessibility Statement</a> &nbsp;|&nbsp; &copy; 2026 Blended Beauty Lounge, LLC. Website by <a href="http://peak4results.com">Peak Marketing &amp; Branding</a>.</p>
     </div>
   </footer>
+  <script src="../assets/accessibility.js"></script>
 </body>
 </html>
