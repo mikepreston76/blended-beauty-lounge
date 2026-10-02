@@ -426,6 +426,23 @@ p { margin: 0 0 1.1rem; max-width: 62ch; }
 /* ---------- Inner pages ---------- */
 .page-head { background: var(--cashmere); padding-block: clamp(2.5rem, 6vw, 4rem); }
 .page-head h1 { margin: 0; }
+.not-found {
+  min-height: clamp(30rem, 68svh, 48rem);
+  display: grid;
+  place-items: center;
+  padding: clamp(4rem, 9vh, 7rem) 1rem;
+  text-align: center;
+}
+.not-found__content { width: min(100%, 48rem); }
+.not-found__code {
+  margin: 0 0 .75rem;
+  color: var(--leather);
+  font-family: var(--font-head);
+  font-weight: 500;
+}
+.not-found h1 { margin: 0 0 1rem; }
+.not-found__message { max-width: 36rem; margin: 0 auto 2rem; color: var(--ink-soft); }
+.not-found__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
 .privacy-content {
   max-width: 760px;
 }
