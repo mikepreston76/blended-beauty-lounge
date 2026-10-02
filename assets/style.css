@@ -324,6 +324,15 @@ p { margin: 0 0 1.1rem; max-width: 62ch; }
 .points h3 { margin-bottom: .35rem; }
 .points p { margin: 0; color: var(--ink-soft); }
 
+.light-cure {
+  padding-block: clamp(4rem, 8vw, 6.5rem);
+  padding-bottom: clamp(1.5rem, 3vw, 2rem);
+}
+.light-cure__layout { display: grid; gap: 2.5rem; align-items: start; }
+.light-cure__intro { max-width: 38rem; }
+.light-cure__benefits { margin: 0; }
+@media (min-width: 820px) { .light-cure__layout { grid-template-columns: 1.15fr 1fr; gap: clamp(3rem, 6vw, 4rem); } }
+
 .work { background: var(--deep); color: var(--cashmere); text-align: center; padding-block: clamp(2.0625rem, 3.75vw, 3rem); }
 .work-eyebrow {
   margin: 0 0 .65rem;
@@ -387,6 +396,15 @@ p { margin: 0 0 1.1rem; max-width: 62ch; }
 }
 
 .reviews { padding-top: clamp(2rem, 5vw, 3rem); }
+.light-cure + .reviews { padding-top: clamp(1rem, 2vw, 1.5rem); }
+.light-cure + .reviews::before {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 4px;
+  margin: 0 auto clamp(1.75rem, 3vw, 2.5rem);
+  background: var(--deep);
+}
 .reviews .wrap { max-width: 1000px; }
 .reviews .elfsight-app-362c52ef-79dd-494c-a66e-9b4983d37ee5 {
   width: 100%;
