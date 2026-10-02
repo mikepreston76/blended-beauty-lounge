@@ -248,6 +248,7 @@ p { margin: 0 0 1.1rem; max-width: 62ch; }
   border: none !important;
   cursor: pointer !important;
   line-height: 20px !important;
+  text-decoration: none !important;
   transition: background-color .2s ease;
 }
 .booksy-widget-button::after {
@@ -283,6 +284,11 @@ p { margin: 0 0 1.1rem; max-width: 62ch; }
 }
 .hero-copy h1 { color: var(--white); max-width: 16ch; }
 .hero-copy p { color: var(--cashmere); font-size: 1.15rem; }
+.hero-copy .bb-booking {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .hero-copy .lockup { width: 150px; margin-bottom: 1.5rem; }
 
 @media (min-width: 820px) {
