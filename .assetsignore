@@ -3,3 +3,5 @@
 wrangler.jsonc
 .assetsignore
 README.md
+cookie-consent-backup/
+worker.mjs

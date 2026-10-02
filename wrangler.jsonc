@@ -1,5 +1,14 @@
 {
   "name": "blended-beauty-lounge",
   "compatibility_date": "2026-09-29",
-  "assets": { "directory": "./" }
+  "main": "worker.mjs",
+  "routes": [
+    { "pattern": "blendedbeautylounge.com/*", "zone_name": "blendedbeautylounge.com" },
+    { "pattern": "www.blendedbeautylounge.com/*", "zone_name": "blendedbeautylounge.com" }
+  ],
+  "assets": {
+    "directory": "./",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  }
 }
